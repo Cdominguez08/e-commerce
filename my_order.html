@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis ordenes</title>
+    <title>Mi Orden</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -48,13 +48,43 @@
             flex-direction: column;
         }
 
-        .order-detail {
-            border-radius: 12px;
+        .cart-container { 
             display: grid;
-            grid-template-columns: auto 1fr auto;
+            grid-template-columns: auto 1fr auto auto;
             gap: 16px;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
+        }
+
+        .cart-container figure {
+            margin: 0;
+        }
+
+        .cart-container figure img {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .cart-container p:nth-child(2){
+            color: var(--very-light-pink);
+        }
+
+        .cart-container p:nth-child(3){
+            font-weight: bold;
+            font-size: var(--mediumSize);
+        }
+
+        .order-detail {
+            background-color: var(--text-input-field);
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+            padding: 0 16px;
+            margin-bottom: 24px;
         }
 
         .order-detail p :nth-child(1){
@@ -81,7 +111,7 @@
 <body>
     <div class="order">
         <div class="order-container">
-            <h1 class="title">Mis Ordenes</h1>
+            <h1 class="title">Mi Orden</h1>
 
             <div class="order-content">
 
@@ -93,32 +123,30 @@
                     <p>
                         $560.00
                     </p>
-
-                    <img src="/icons/flechita.svg" alt="">
                 </div>
 
-                <div class="order-detail">
-                    <p>
-                        <span>16.06.22</span>
-                        <span>6 articulos</span>
-                    </p>
-                    <p>
-                        $560.00
-                    </p>
-
-                    <img src="/icons/flechita.svg" alt="">
+                <div class="cart-container">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </figure>
+                    <p>Bicicleta mintage</p>
+                    <p>$2500.00 MXN</p>
                 </div>
-
-                <div class="order-detail">
-                    <p>
-                        <span>16.06.22</span>
-                        <span>6 articulos</span>
-                    </p>
-                    <p>
-                        $560.00
-                    </p>
-
-                    <img src="/icons/flechita.svg" alt="">
+    
+                <div class="cart-container">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </figure>
+                    <p>Bicicleta mintage</p>
+                    <p>$2500.00 MXN</p>
+                </div>
+    
+                <div class="cart-container">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    </figure>
+                    <p>Bicicleta mintage</p>
+                    <p>$2500.00 MXN</p>
                 </div>
             </div>
         </div>
